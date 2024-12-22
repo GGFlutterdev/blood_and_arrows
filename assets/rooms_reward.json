@@ -1,0 +1,32 @@
+{
+  "rooms": [
+    {
+      "rare_items": true,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": true,
+      "is_reward": true
+    },
+    {
+      "rare_items": true,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": false,
+      "is_reward": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": true,
+      "is_reward": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": false,
+      "is_reward": true
+    }
+  ]
+}

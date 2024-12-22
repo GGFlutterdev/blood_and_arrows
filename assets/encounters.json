@@ -1,0 +1,67 @@
+{
+"encounters": [
+    {
+    "difficulty": "Easy",
+    "monsters": [
+        "2 Goblins",
+        "1 Wolf"
+    ]
+    },
+    {
+    "difficulty": "Easy",
+    "monsters": [
+        "1 Goblin",
+        "2 Giant Rats"
+    ]
+    },
+    {
+    "difficulty": "Easy",
+    "monsters": [
+        "3 Wolves"
+    ]
+    },
+    {
+    "difficulty": "Easy",
+    "monsters": [
+        "3 Goblins"
+    ]
+    },
+    {
+    "difficulty": "Easy",
+    "monsters": [
+        "1 Goblin",
+        "1 Giant Spider"
+    ]
+    },
+    {
+    "difficulty": "Medium",
+    "monsters": [
+        "1 Goblin Boss"
+    ]
+    },
+    {
+    "difficulty": "Medium",
+    "monsters": [
+        "4 Giant Spiders"
+    ]
+    },
+    {
+    "difficulty": "Medium",
+    "monsters": [
+        "1 Bugbear"
+    ]
+    },
+    {
+    "difficulty": "Medium",
+    "monsters": [
+        "1 Goblin Shaman"
+    ]
+    },
+    {
+    "difficulty": "Medium",
+    "monsters": [
+        "Troll"
+    ]
+    }
+]
+}

@@ -1,0 +1,107 @@
+{
+  "items": [
+    {
+      "name": "Goblin Slayer's Amulet",
+      "slot": "Amulet",
+      "item_class": [
+        "Fighter"
+      ],
+      "rarity": "Rare",
+      "effect": "Se combatti con goblinoidi, i Punti Combattimento sono +15."
+    },
+    {
+      "name": "Magic Staff",
+      "slot": "Two Hands",
+      "item_class": [
+        "Mage",
+        "Healer"
+      ],
+      "rarity": "Rare",
+      "effect": "+4 Punti Combattimento. Se indossato da un guaritore aggiungi +1 alle cure, se invece è indossata da un mago invece sono +6 Punti Combattimento."
+    },
+    {
+      "name": "Long Dwarvish Sword",
+      "slot": "Two Hands",
+      "item_class": [
+        "Fighter",
+        "Berserker"
+      ],
+      "rarity": "Rare",
+      "effect": "+10 Punti Combattimento. Se indossata da un berserker invece sono +12 Punti Combattimento"
+    },
+    {
+      "name": "Precious Ring",
+      "slot": "Ring",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Uncommon",
+      "effect": "+1.5 Punti Combattimento."
+    },
+    {
+      "name": "Leather armor",
+      "slot": "Body",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Uncommon",
+      "effect": "+2 Punti Combattimento."
+    },
+    {
+      "name": "Sword",
+      "slot": "One Hand",
+      "item_class": [
+        "Fighter",
+        "Berserker"
+      ],
+      "rarity": "Starter",
+      "effect": "+5 Punti Combattimento."
+    },
+    {
+      "name": "Magic Wand",
+      "slot": "One Hand",
+      "item_class": [
+        "Mage"
+      ],
+      "rarity": "Starter",
+      "effect": "+2 Punti Combattimento."
+    },
+    {
+      "name": "Short Sword",
+      "slot": "One Hand",
+      "item_class": [
+        "Explorer"
+      ],
+      "rarity": "Starter",
+      "effect": "+2 Punti Combattimento."
+    },
+    {
+      "name": "Wooden shield",
+      "slot": "One Hand",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Uncommon",
+      "effect": "-2 danni per combattumento."
+    },
+    {
+      "name": "Two Handed Axe",
+      "slot": "Two Hands",
+      "item_class": [
+        "Berserker"
+      ],
+      "rarity": "Starter",
+      "effect": "+8 Punti Combattimento."
+    },
+
+    {
+      "name": "Small Healing Potion",
+      "slot": "Bag",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Common",
+      "effect": "Ripristina 2 Punti Vita"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "rooms": [
+    {
+      "rare_items": true,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": true
+    }
+  ]
+}
