@@ -1,10 +1,9 @@
 class Room:
-    def __init__(self, rare_items=False, uncommon_items=False, common_items=False, has_encounter=False, puzzle=None, trick=None, is_reward=False):
+    def __init__(self, rare_items=False, uncommon_items=False, common_items=False, has_encounter=False, trick=None, is_reward=False):
         self.rare_items = rare_items
         self.uncommon_items = uncommon_items
         self.common_items = common_items
         self.has_encounter = has_encounter
-        self.puzzle = puzzle
         self.trick = trick
         self.items = []
         self.encounter = None
@@ -13,23 +12,16 @@ class Room:
     def __str__(self):
         return (
             f"Room\n"
-            f"  - Puzzle={self.puzzle}\n"
             f"  - Trick={self.trick}\n"
             f"  - Items={self.items}\n"
             f"  - Encounter={self.encounter}"
         )
-
-    def has_puzzle(self):
-        return self.puzzle is not None
 
     def has_trick(self):
         return self.trick is not None
 
     def has_encounter(self):
         return self.has_encounter
-
-    def get_puzzle(self):
-        return self.puzzle if self.has_puzzle() else "No puzzle in this room."
 
     def get_trick(self):
         return self.trick if self.has_trick() else "No trick in this room."

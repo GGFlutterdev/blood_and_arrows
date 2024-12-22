@@ -8,7 +8,7 @@ class Item:
 
     def __str__(self):
         return (
-            f"Item(name={self.name}, slot={self.slot}, "
+            f"\n    - Item(name={self.name}, slot={self.slot}, "
             f"class={self.item_class}, rarity={self.rarity}, effect={self.effect})"
         )
 

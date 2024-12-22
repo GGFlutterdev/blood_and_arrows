@@ -7,14 +7,17 @@ class Dungeon:
         self.corridors = corridors if corridors is not None else []
     
     def display_dungeon(self):
-        print("Dungeon Rooms:")
-        for room in self.rooms:
-            print(' + ' + str(room))
-
-        print("\nDungeon Corridors:")
-        for corridor in self.corridors:
-            print(' + ' + str(corridor))
-
+        print("Dungeon Layout:\n")
+        
+        # Assumendo che l'ordine logico sia stanza-corridoio-stanza-corridoio...
+        max_length = max(len(self.rooms), len(self.corridors))
+        
+        for i in range(max_length):
+            if i < len(self.corridors):
+                print(f" + Corridor {i + 1}: {self.corridors[i]}\n")
+            if i < len(self.rooms):
+                print(f" + Room {i + 1}: {self.rooms[i]}\n")
+    
     def get_rooms(self):
         return self.rooms
 

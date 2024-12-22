@@ -38,13 +38,6 @@
       "common_items": true,
       "has_encounter": true,
       "trick": "There is an artifact which us cursed and inflicts a curse until completed (+1 damages from fights). Can be completed in the reward room."
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": false,
-      "has_encounter": false,
-      "puzzle": "In una stanza buia e carica di tensione, vi trovate di fronte a un altare di pietra fatiscente. Simboli magici debolmente luminosi danzano sulle sue superfici. Una voce profonda e spettrale riecheggia intorno a voi: “Parlo senza bocca e ascolto senza orecchie. Non ho corpo, ma prendo vita con il vento. Cosa sono?” La sensazione che il luogo sia impregnato di magia vi spinge a dare una risposta attenta. Alla risoluzione: Pronunciando la risposta corretta un'ondata di energia magica vi attraversa. Le rune sull'altare brillano di luce vivida, e una ricompensa appare al centro della pietra. Sentite una presenza benevola che sembra rafforzare il vostro spirito."
     }
   ]
 }

@@ -1,3 +1,5 @@
+# Description: This file contains the main function to generate a dungeon, which is composed of five rooms and four or five corridors. Each room has a random encounter and items assigned to it. The dungeon is then displayed.
+
 import json
 import random
 from units.room import Room
@@ -7,41 +9,42 @@ from units.corridor import Corridor
 from units.encounter import Encounter
 
 def load_rooms():
-    with open('assets/rooms.json', 'r') as file:
+    with open('assets/rooms.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
         rooms = [Room(**room) for room in data['rooms']]
     return rooms
 
+
 def load_boss_rooms_from_json():
-    with open('assets/rooms_boss.json', 'r') as file:
+    with open('assets/rooms_boss.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
         rooms = [Room(**room) for room in data['rooms']]
     return rooms
 
 def load_reward_rooms_from_json():
-    with open('assets/rooms_reward.json', 'r') as file:
+    with open('assets/rooms_reward.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
         rooms = [Room(**room) for room in data['rooms']]
     return rooms
 
-
 def load_corridors_from_json():
-    with open('assets/corridors.json', 'r') as file:
+    with open('assets/corridors.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
         corridors = [Corridor(**corridor) for corridor in data['corridors']]
     return corridors
 
 def load_encounters():
-    with open('assets/encounters.json', 'r') as file:
+    with open('assets/encounters.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
-        encounters = [Encounter(**encounter) for encounter in data['encounters']]  # Carica encounter da 'encounters.json'
+        encounters = [Encounter(**encounter) for encounter in data['encounters']]
     return encounters
 
 def load_items():
-    with open('assets/items.json', 'r') as file:  # Usa il file corretto per gli items
+    with open('assets/items.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
-        items = [Item(**item) for item in data['items']]  # Carica items da 'items.json'
+        items = [Item(**item) for item in data['items']]
     return items
+
 
 def generate_random_encounter_in_room(room, encounters, difficulty):
     if room.has_encounter:
@@ -57,7 +60,7 @@ def generate_encounters(rooms):
     generate_random_encounter_in_room(rooms[0], encounters, "Easy")
     generate_random_encounter_in_room(rooms[1], encounters, "Easy")
     generate_random_encounter_in_room(rooms[2], encounters, "Easy")
-    generate_random_encounter_in_room(rooms[3], encounters, "Medium")
+    generate_random_encounter_in_room(rooms[3], encounters, "Medium") # Boss room
     generate_random_encounter_in_room(rooms[4], encounters, "Easy")
 
 def assign_random_item_to_room(room, items):
@@ -72,17 +75,14 @@ def assign_items_to_rooms(rooms):
     rare_items = [item for item in items if item.rarity == "Rare"]
 
     for room in rooms:
-        
-        if (room.has_puzzle()) and room.uncommon_items:
-            assign_random_item_to_room(room, uncommon_items)
 
-        elif room.is_reward:
+        if room.is_reward:
             if room.common_items:
                 num_common_items = random.randint(1, 2)
                 for _ in range(num_common_items):
                     assign_random_item_to_room(room, common_items)
 
-            if room.uncommon_items:
+            if room.uncommon_items and random.random() <= 0.5:
                 assign_random_item_to_room(room, uncommon_items)
 
             if room.rare_items and random.random() <= 0.2:
@@ -94,9 +94,9 @@ def assign_items_to_rooms(rooms):
                 for _ in range(num_common_items):
                     assign_random_item_to_room(room, common_items)
 
-            if room.uncommon_items and random.random() <= 0.5:
+            if room.uncommon_items and random.random() <= 0.125:
                 assign_random_item_to_room(room, uncommon_items)
-                if random.random() <= 0.33:
+                if random.random() <= 0.5:
                     assign_random_item_to_room(room, uncommon_items)
 
             if room.rare_items and random.random() <= 0.143:
@@ -122,7 +122,14 @@ def get_corridors():
     corridors = load_corridors_from_json()
     corridors_number = random.randint(4, 5)
 
-    return random.choices(corridors, k=corridors_number)
+    generated_corridors = random.choices(corridors, k=corridors_number)
+    
+    if corridors_number == 4:
+        # Inserisce un corridoio con tutto False all'inizio
+        empty_corridor = Corridor(ambush={}, trap={}, has_secret_door=False)
+        generated_corridors.insert(0, empty_corridor)
+
+    return generated_corridors
 
 def generate_dungeon():
     rooms = get_five_rooms()
