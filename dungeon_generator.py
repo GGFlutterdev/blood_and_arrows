@@ -66,9 +66,10 @@ def generate_encounters(rooms):
     generate_random_encounter_in_room(rooms[3], encounters, "Medium") # Boss room
     generate_random_encounter_in_room(rooms[4], encounters, "Easy")
 
-def assign_random_item_to_room(room, items):
-    random_item = random.choice(items)
-    room.add_item(random_item)
+def assign_random_item_to_room(room, items, probability=1):
+    if random.random() <= probability:
+        random_item = random.choice(items)
+        room.add_item(random_item)
 
 def assign_items_to_rooms(rooms):
     items = load_items()
@@ -85,11 +86,12 @@ def assign_items_to_rooms(rooms):
                 for _ in range(num_common_items):
                     assign_random_item_to_room(room, common_items)
 
-            if room.uncommon_items and random.random() <= 0.33:
-                assign_random_item_to_room(room, uncommon_items)
+            if room.uncommon_items:
+                assign_random_item_to_room(room, uncommon_items, 0.125)
+                assign_random_item_to_room(room, uncommon_items, 0.1)
 
-            if room.rare_items and random.random() <= 0.2:
-                assign_random_item_to_room(room, rare_items)
+            if room.rare_items:
+                assign_random_item_to_room(room, rare_items, 0.2)
 
         else: 
             if room.common_items:
@@ -97,13 +99,11 @@ def assign_items_to_rooms(rooms):
                 for _ in range(num_common_items):
                     assign_random_item_to_room(room, common_items)
 
-            if room.uncommon_items and random.random() <= 0.167:
-                assign_random_item_to_room(room, uncommon_items)
-                if random.random() <= 0.167:
-                    assign_random_item_to_room(room, uncommon_items)
+            if room.uncommon_items:
+                assign_random_item_to_room(room, uncommon_items, 0.167)
 
-            if room.rare_items and random.random() <= 0.143:
-                assign_random_item_to_room(room, rare_items)
+            if room.rare_items:
+                assign_random_item_to_room(room, rare_items, 0.143)
 
 def get_five_rooms():
     rooms = load_rooms()
