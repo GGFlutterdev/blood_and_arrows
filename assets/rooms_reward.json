@@ -18,7 +18,7 @@
       "rare_items": false,
       "uncommon_items": true,
       "common_items": true,
-      "has_encounter": true,
+      "has_encounter": false,
       "is_reward": true
     },
     {

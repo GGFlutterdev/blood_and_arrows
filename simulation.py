@@ -52,6 +52,9 @@ def calculate_average_number_of_dungeons_to_get_the_first_rare():
     return average
 
 def main():
+
+    print("In circa 3 dungeon bisogna riuscire ad ottenere l'equipaggiamento completo.")
+    print("In circa 4 dungeon bisogna riuscire ad ottenere la prima rara.")
     
     average_full_equip = calculate_average_number_of_dungeons_to_get_full_equip()
     print(f"Numero medio di dungeon per ottenere l'equipaggiamento completo: {average_full_equip}")

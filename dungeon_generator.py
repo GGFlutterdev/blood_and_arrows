@@ -1,4 +1,7 @@
-# Description: This file contains the main function to generate a dungeon, which is composed of five rooms and four or five corridors. Each room has a random encounter and items assigned to it. The dungeon is then displayed.
+# Description: This file contains the main function to generate a dungeon, which is composed of five rooms and five corridors.
+# Each room has a random encounter, items and chest assigned to it.
+# Each corridor has a random ambush, trap or secret door.
+# The dungeon is then displayed.
 
 import json
 import random
@@ -82,7 +85,7 @@ def assign_items_to_rooms(rooms):
                 for _ in range(num_common_items):
                     assign_random_item_to_room(room, common_items)
 
-            if room.uncommon_items and random.random() <= 0.5:
+            if room.uncommon_items and random.random() <= 0.25:
                 assign_random_item_to_room(room, uncommon_items)
 
             if room.rare_items and random.random() <= 0.2:
@@ -96,7 +99,7 @@ def assign_items_to_rooms(rooms):
 
             if room.uncommon_items and random.random() <= 0.125:
                 assign_random_item_to_room(room, uncommon_items)
-                if random.random() <= 0.5:
+                if random.random() <= 0.125:
                     assign_random_item_to_room(room, uncommon_items)
 
             if room.rare_items and random.random() <= 0.143:
@@ -120,15 +123,9 @@ def get_five_rooms():
 
 def get_corridors():
     corridors = load_corridors_from_json()
-    corridors_number = random.randint(4, 5)
+    corridors_number = 5
 
     generated_corridors = random.choices(corridors, k=corridors_number)
-    
-    if corridors_number == 4:
-        # Inserisce un corridoio con tutto False all'inizio
-        empty_corridor = Corridor(ambush={}, trap={}, has_secret_door=False)
-        generated_corridors.insert(0, empty_corridor)
-
     return generated_corridors
 
 def generate_dungeon():

@@ -2,6 +2,13 @@
   "rooms": [
     {
       "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": true,
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
       "uncommon_items": false,
       "common_items": true,
       "has_encounter": true
@@ -10,7 +17,28 @@
       "rare_items": false,
       "uncommon_items": false,
       "common_items": true,
+      "has_encounter": false,
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": false,
       "has_encounter": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": false,
+      "trick": "Il combattimento è stato estenuante. I Punti Combattimento del gruppo calano di 10."
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": false,
+      "common_items": true,
+      "has_encounter": true,
+      "has_chest": true
     },
     {
       "rare_items": false,
@@ -22,22 +50,90 @@
       "rare_items": false,
       "uncommon_items": true,
       "common_items": true,
-      "has_encounter": true,
-      "trick": "C'è una cassa"
+      "has_encounter": false,
+      "has_chest": true
     },
     {
       "rare_items": false,
       "uncommon_items": false,
       "common_items": true,
       "has_encounter": true,
-      "trick": "The room has an exhausting encounter. The next fighti will have -0.1 success rate."
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": false,
+      "has_encounter": true,
+      "has_chest": false,
+      "trick": "Il combattimento è stato estenuante. I Punti Combattimento del gruppo calano di 10."
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": false,
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": true,
+      "has_encounter": false,
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": false,
+      "has_encounter": true,
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": false,
+      "common_items": true,
+      "has_encounter": true,
+      "has_chest": true,
+      "trick": "Il combattimento è stato estenuante. I Punti Combattimento del gruppo calano di 10."
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": true,
+      "common_items": false,
+      "has_encounter": true
     },
     {
       "rare_items": false,
       "uncommon_items": true,
       "common_items": true,
       "has_encounter": true,
-      "trick": "There is an artifact which us cursed and inflicts a curse until completed (+1 damages from fights). Can be completed in the reward room."
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": false,
+      "common_items": true,
+      "has_encounter": false,
+      "has_chest": true
+    },
+    {
+      "rare_items": false,
+      "uncommon_items": false,
+      "common_items": true,
+      "has_encounter": true
     }
   ]
 }
