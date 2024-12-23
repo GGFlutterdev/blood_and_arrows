@@ -7,17 +7,17 @@ from dungeon_generator import generate_dungeon
 num_iterations = 10000
 
 def number_of_dungeons_to_get_full_equip(_=None):
-    leather_armors = 0
+    amulets = 0
     rings = 0
     number_of_dungeons = 0
-    while leather_armors < 1 and rings < 2:
+    while amulets < 1 and rings < 2:
         dungeon = generate_dungeon()
         rooms = dungeon.rooms
         for room in rooms:
             items = room.items
             for item in items:
                 if item.name == "Shiny Amulet":
-                    leather_armors += 1
+                    amulets += 1
                 if item.name == "Precious Ring":
                     rings += 1
         number_of_dungeons += 1

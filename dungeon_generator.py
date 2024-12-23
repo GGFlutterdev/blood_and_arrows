@@ -79,7 +79,7 @@ def assign_items_to_rooms(rooms):
 
     for room in rooms:
 
-        if room.is_reward:
+        if room.is_reward or (room.chest != None and room.chest.type != "Mimic"):
             if room.common_items:
                 num_common_items = random.randint(1, 2)
                 for _ in range(num_common_items):
