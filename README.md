@@ -51,7 +51,7 @@ Assicurati di avere **Python 3** installato sul tuo sistema. 🧙‍♀️
      python simulation.py
      ```
 
-3. Personalizza i parametri in dungeon_generator.py per bilanciare la rarità degli oggetti in seguito all'aggiornamento dei seguenti file JSON:
+3. Personalizza i parametri in dungeon_generator.py per bilanciare la rarità degli oggetti in seguito all'aggiornamento dei seguenti file:
 - `rooms.json`
 - `rooms_boss.json`
 - `rooms_reward.json`
