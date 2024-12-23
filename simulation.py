@@ -16,7 +16,7 @@ def number_of_dungeons_to_get_full_equip(_=None):
         for room in rooms:
             items = room.items
             for item in items:
-                if item.name == "Leather armor":
+                if item.name == "Shiny Amulet":
                     leather_armors += 1
                 if item.name == "Precious Ring":
                     rings += 1

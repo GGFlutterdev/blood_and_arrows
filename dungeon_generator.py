@@ -85,7 +85,7 @@ def assign_items_to_rooms(rooms):
                 for _ in range(num_common_items):
                     assign_random_item_to_room(room, common_items)
 
-            if room.uncommon_items and random.random() <= 0.25:
+            if room.uncommon_items and random.random() <= 0.33:
                 assign_random_item_to_room(room, uncommon_items)
 
             if room.rare_items and random.random() <= 0.2:
@@ -97,9 +97,9 @@ def assign_items_to_rooms(rooms):
                 for _ in range(num_common_items):
                     assign_random_item_to_room(room, common_items)
 
-            if room.uncommon_items and random.random() <= 0.125:
+            if room.uncommon_items and random.random() <= 0.167:
                 assign_random_item_to_room(room, uncommon_items)
-                if random.random() <= 0.125:
+                if random.random() <= 0.167:
                     assign_random_item_to_room(room, uncommon_items)
 
             if room.rare_items and random.random() <= 0.143:

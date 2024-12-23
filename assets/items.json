@@ -39,13 +39,31 @@
       "effect": "+1.5 Punti Combattimento."
     },
     {
-      "name": "Leather armor",
-      "slot": "Body",
+      "name": "Shiny Amulet",
+      "slot": "Amulet",
       "item_class": [
         "All"
       ],
       "rarity": "Uncommon",
       "effect": "+2 Punti Combattimento."
+    },
+    {
+      "name": "Wooden shield",
+      "slot": "One Hand",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Uncommon",
+      "effect": "-2 danni per combattumento."
+    },
+    {
+      "name": "Lock-picking Tools",
+      "slot": "Bag",
+      "item_class": [
+        "Explorer"
+      ],
+      "rarity": "Uncommon",
+      "effect": "Disinnesca una trappola o un forziere trapola."
     },
     {
       "name": "Sword",
@@ -76,15 +94,6 @@
       "effect": "+2 Punti Combattimento."
     },
     {
-      "name": "Wooden shield",
-      "slot": "One Hand",
-      "item_class": [
-        "All"
-      ],
-      "rarity": "Uncommon",
-      "effect": "-2 danni per combattumento."
-    },
-    {
       "name": "Two Handed Axe",
       "slot": "Two Hands",
       "item_class": [
@@ -93,7 +102,6 @@
       "rarity": "Starter",
       "effect": "+8 Punti Combattimento."
     },
-
     {
       "name": "Small Healing Potion",
       "slot": "Bag",
@@ -102,6 +110,51 @@
       ],
       "rarity": "Common",
       "effect": "Ripristina 2 Punti Vita"
+    },
+    {
+      "name": "Leather Armor",
+      "slot": "Body",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Shop",
+      "effect": "+5 HP."
+    },
+    {
+      "name": "Leather Cap",
+      "slot": "Body",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Shop",
+      "effect": "+2 HP."
+    },
+    {
+      "name": "Leather Gloves",
+      "slot": "Body",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Shop",
+      "effect": "+2 HP."
+    },
+    {
+      "name": "Leather Pants",
+      "slot": "Body",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Shop",
+      "effect": "+2 HP."
+    },
+    {
+      "name": "Leather Boots",
+      "slot": "Body",
+      "item_class": [
+        "All"
+      ],
+      "rarity": "Shop",
+      "effect": "+1 HP."
     }
   ]
 }

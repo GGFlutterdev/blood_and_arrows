@@ -29,6 +29,6 @@ classes = {
         name="Explorer", 
         hp=20,
         combat_success_rate=0.1,
-        role="Identifica trappole, tesori e porte segrete. 67% probabilità di individuare una trappola e 50% probabilità di disinnescarla."
+        role="Identifica trappole, tesori e porte segrete. 50% probabilità di individuare una trappola."
     ),
 }
