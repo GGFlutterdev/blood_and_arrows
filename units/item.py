@@ -1,10 +1,11 @@
 class Item:
-    def __init__(self, name: str, slot: str, item_class: list, rarity: str, effect: str):
+    def __init__(self, name: str, slot: str, item_class: list, rarity: str, effect: str, price: int =0):
         self.name = name
         self.slot = slot
         self.item_class = item_class
         self.rarity = rarity
         self.effect = effect
+        self.price = price
 
     def __str__(self):
         return (

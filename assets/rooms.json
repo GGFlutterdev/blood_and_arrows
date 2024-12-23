@@ -65,8 +65,7 @@
       "uncommon_items": true,
       "common_items": false,
       "has_encounter": true,
-      "has_chest": false,
-      "trick": "Il combattimento è stato estenuante. I Punti Combattimento del gruppo calano di 10."
+      "has_chest": false
     },
     {
       "rare_items": false,
@@ -106,8 +105,7 @@
       "uncommon_items": false,
       "common_items": true,
       "has_encounter": true,
-      "has_chest": true,
-      "trick": "Il combattimento è stato estenuante. I Punti Combattimento del gruppo calano di 10."
+      "has_chest": true
     },
     {
       "rare_items": false,

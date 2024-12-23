@@ -27,7 +27,7 @@
         "Berserker"
       ],
       "rarity": "Rare",
-      "effect": "+10 Punti Combattimento. Se indossata da un berserker invece sono +12 Punti Combattimento"
+      "effect": "+12 Punti Combattimento."
     },
     {
       "name": "Precious Ring",
@@ -114,47 +114,42 @@
     {
       "name": "Leather Armor",
       "slot": "Body",
-      "item_class": [
-        "All"
-      ],
+      "item_class": ["All"],
       "rarity": "Shop",
-      "effect": "+5 HP."
-    },
-    {
+      "effect": "+5 HP. Protezione principale del corpo.",
+      "price": 60
+  },
+  {
       "name": "Leather Cap",
-      "slot": "Body",
-      "item_class": [
-        "All"
-      ],
+      "slot": "Head",
+      "item_class": ["All"],
       "rarity": "Shop",
-      "effect": "+2 HP."
-    },
-    {
+      "effect": "+2 HP. Protezione aggiuntiva alla testa.",
+      "price": 25
+  },
+  {
       "name": "Leather Gloves",
-      "slot": "Body",
-      "item_class": [
-        "All"
-      ],
+      "slot": "Hands",
+      "item_class": ["All"],
       "rarity": "Shop",
-      "effect": "+2 HP."
-    },
-    {
+      "effect": "+1 HP. Protezione leggera per le mani.",
+      "price": 15
+  },
+  {
       "name": "Leather Pants",
-      "slot": "Body",
-      "item_class": [
-        "All"
-      ],
+      "slot": "Legs",
+      "item_class": ["All"],
       "rarity": "Shop",
-      "effect": "+2 HP."
-    },
-    {
+      "effect": "+3 HP. Protezione media per le gambe.",
+      "price": 40
+  },
+  {
       "name": "Leather Boots",
-      "slot": "Body",
-      "item_class": [
-        "All"
-      ],
+      "slot": "Feet",
+      "item_class": ["All"],
       "rarity": "Shop",
-      "effect": "+1 HP."
-    }
+      "effect": "+1 HP. Protezione leggera per i piedi.",
+      "price": 10
+  }
   ]
 }
