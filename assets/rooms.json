@@ -30,7 +30,7 @@
       "rare_items": false,
       "uncommon_items": true,
       "common_items": true,
-      "has_encounter": false,
+      "has_encounter": true,
       "trick": "Il combattimento è stato estenuante. I Punti Combattimento del gruppo calano di 10."
     },
     {
