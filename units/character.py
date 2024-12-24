@@ -1,6 +1,5 @@
 class Character:
-    def __init__(self, name, hp, combat_success_rate, role):
-        self.name = name
+    def __init__(name, hp, combat_success_rate, abilities=None):
         self.hp = hp
         self.combat_success_rate = combat_success_rate
-        self.role = role
+        self.abilities = abilities if abilities is not None else []
