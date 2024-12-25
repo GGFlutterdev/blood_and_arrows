@@ -26,7 +26,3 @@ def calculate_average_damage_in_easy_dungeon(num_iterations):
 
     average_damage = sum(results) / len(results)
     return average_damage
-
-if __name__ == "__main__":
-    average_damage = calculate_average_damage_in_easy_dungeon(10000)
-    print(f"Danno subito in media in un dungeon facile con 60 PC complessivi: {average_damage}")

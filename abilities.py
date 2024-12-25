@@ -21,13 +21,13 @@ abilities = {
     ),
     "Benedizione": Ability(
         description="Cura 4 danni ad un alleato.",
-        heal=4,
+        heal=2,
         max_selection=1,
         max_number_of_uses=1
     ),
     "Preghiera guaritrice": Ability(
         description="Cura 2 danni a tutto il gruppo.",
-        heal=2,
+        heal=1,
         max_selection=4,
         max_number_of_uses=2
     )

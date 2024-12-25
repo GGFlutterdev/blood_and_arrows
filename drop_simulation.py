@@ -49,16 +49,20 @@ def calculate_average_number_of_dungeons_to_get_the_first_rare(num_iterations):
     average = sum(results) / len(results)
     return average
 
-def main():
+def number_of_small_healing_potions_in_easy_dungeon(_=None):
+    small_healing_potions = 0
+    dungeon = generate_dungeon(difficulty="Easy")
+    rooms = dungeon.rooms
+    for room in rooms:
+        items = room.items
+        for item in items:
+            if item.name == "Small Healing Potion":
+                small_healing_potions += 1
+    return small_healing_potions
 
-    print("In circa 3 dungeon bisogna riuscire ad ottenere l'equipaggiamento completo.")
-    print("In circa 4 dungeon bisogna riuscire ad ottenere la prima rara.")
-    
-    average_full_equip = calculate_average_number_of_dungeons_to_get_full_equip(10000)
-    print(f"Numero medio di dungeon per ottenere l'equipaggiamento completo: {average_full_equip}")
-    
-    average_first_rare = calculate_average_number_of_dungeons_to_get_the_first_rare(10000)
-    print(f"Numero medio di dungeon per ottenere la prima rara: {average_first_rare}")
+def calculate_average_number_of_small_healing_potions_in_easy_dungeon(num_iterations):
+    with multiprocessing.Pool(processes=6) as pool:
+        results = pool.map(number_of_dungeons_to_get_the_first_rare, range(num_iterations))
 
-if __name__ == "__main__":
-    main()
+    average = sum(results) / len(results)
+    return average

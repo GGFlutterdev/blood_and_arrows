@@ -24,9 +24,7 @@ def assign_items_to_rooms(rooms):
 
         if room.is_reward or (room.chest != None and room.chest.type != "Mimic"):
             if room.common_items:
-                num_common_items = random.randint(1, 2)
-                for _ in range(num_common_items):
-                    assign_random_item_to_room(room, common_items)
+                assign_random_item_to_room(room, common_items, 0.33)
 
             if room.uncommon_items:
                 assign_random_item_to_room(room, uncommon_items, 0.75)
@@ -37,9 +35,7 @@ def assign_items_to_rooms(rooms):
 
         else: 
             if room.common_items:
-                num_common_items = random.randint(0, 2)
-                for _ in range(num_common_items):
-                    assign_random_item_to_room(room, common_items)
+                assign_random_item_to_room(room, common_items, 0.33)
 
             if room.uncommon_items:
                 assign_random_item_to_room(room, uncommon_items, 0.5)

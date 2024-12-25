@@ -42,16 +42,14 @@ def get_five_rooms():
 
     return dungeon_rooms
 
-def get_corridors():
+def get_five_corridors():
     corridors = load_corridors_from_json()
-    corridors_number = 5
-
-    generated_corridors = random.choices(corridors, k=corridors_number)
+    generated_corridors = random.choices(corridors, k=5)
     return generated_corridors
 
 def generate_dungeon(difficulty):
     rooms = get_five_rooms()
-    corridors = get_corridors()
+    corridors = get_five_corridors()
 
     generate_encounters(rooms, difficulty)
     
