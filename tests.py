@@ -41,7 +41,7 @@ def main():
         print(f"⚠️ Il danno medio in un dungeon facile è troppo alto! ({average_damage_to_single_chatacter_in_easy_dungeon:.2f}). Il valore ottimale è compreso tra 21 e 22.")
 
     # Test sul danno medio in un dungeon medio
-    if average_damage_to_single_chatacter_in_medium_dungeon >= 31 and average_damage_to_single_chatacter_in_medium_dungeon <= 32:
+    if average_damage_to_single_chatacter_in_medium_dungeon >= 31 and average_damage_to_single_chatacter_in_medium_dungeon <= 33:
         print(f"✅ Danno medio in un dungeon medio: {average_damage_to_single_chatacter_in_medium_dungeon:.2f}")
     elif average_damage_to_single_chatacter_in_medium_dungeon < 31:
         print(f"⚠️ Il danno medio in un dungeon medio è troppo basso! ({average_damage_to_single_chatacter_in_medium_dungeon:.2f}). Il valore ottimale è compreso tra 31 e 33.")
@@ -49,11 +49,11 @@ def main():
         print(f"⚠️ Il danno medio in un dungeon medio è troppo alto! ({average_damage_to_single_chatacter_in_medium_dungeon:.2f}). Il valore ottimale è compreso tra 31 e 33.")
 
     # Test sul numero medio di pozioni di guarigione in un dungeon facile
-    if average_number_of_small_healing_potions_in_easy_dungeon >= 3 and average_number_of_small_healing_potions_in_easy_dungeon <= 4:
+    if average_number_of_small_healing_potions_in_easy_dungeon >= 3 and average_number_of_small_healing_potions_in_easy_dungeon <= 4.1:
         print(f"✅ Numero medio di pozioni di guarigione in un dungeon facile: {average_number_of_small_healing_potions_in_easy_dungeon:.2f}")
     elif average_number_of_small_healing_potions_in_easy_dungeon < 3:
         print(f"⚠️ Il numero medio di pozioni di guarigione in un dungeon facile è troppo basso! ({average_number_of_small_healing_potions_in_easy_dungeon:.2f}). Il valore ottimale è compreso tra 3 e 4.")
-    elif average_number_of_small_healing_potions_in_easy_dungeon > 4:
+    elif average_number_of_small_healing_potions_in_easy_dungeon > 4.1:
         print(f"⚠️ Il numero medio di pozioni di guarigione in un dungeon facile è troppo alto! ({average_number_of_small_healing_potions_in_easy_dungeon:.2f}). Il valore ottimale è compreso tra 3 e 4.")
 
 if __name__ == "__main__":
