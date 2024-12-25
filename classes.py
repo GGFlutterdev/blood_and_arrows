@@ -1,5 +1,5 @@
-from units.character import Character
 from abilities import abilities
+from units.character import Character
 
 classes = {
     "Fighter": Character(

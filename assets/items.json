@@ -36,7 +36,7 @@
         "All"
       ],
       "rarity": "Uncommon",
-      "effect": "+1.5 Punti Combattimento."
+      "effect": "+1 Punto Combattimento."
     },
     {
       "name": "Shiny Amulet",
@@ -45,7 +45,7 @@
         "All"
       ],
       "rarity": "Uncommon",
-      "effect": "+2 Punti Combattimento."
+      "effect": "+1 Punto Combattimento."
     },
     {
       "name": "Wooden shield",
@@ -107,7 +107,7 @@
       "slot": "Body",
       "item_class": ["All"],
       "rarity": "Shop",
-      "effect": "+5 HP. Protezione principale del corpo.",
+      "effect": "+4 HP. Protezione principale del corpo.",
       "price": 60
   },
   {
@@ -131,8 +131,8 @@
       "slot": "Legs",
       "item_class": ["All"],
       "rarity": "Shop",
-      "effect": "+3 HP. Protezione media per le gambe.",
-      "price": 40
+      "effect": "+1 HP. Protezione media per le gambe.",
+      "price": 20
   },
   {
       "name": "Leather Boots",

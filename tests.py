@@ -1,16 +1,19 @@
-from combat_simulation import calculate_average_damage_in_easy_dungeon
 from drop_simulation import calculate_average_number_of_dungeons_to_get_full_equip
 from drop_simulation import calculate_average_number_of_dungeons_to_get_the_first_rare
+from combat_simulation import calculate_average_damage_to_single_chatacter_in_easy_dungeon
+from combat_simulation import calculate_average_damage_to_single_chatacter_in_medium_dungeon
 from drop_simulation import calculate_average_number_of_small_healing_potions_in_easy_dungeon
 
 
 def main():
-    num_iterations = 10000
+    num_iterations = 100000
 
     print("🧪 Running tests...")
-    average_number_of_dungeons_to_get_the_first_rare = calculate_average_number_of_dungeons_to_get_the_first_rare(num_iterations)
+
     average_number_of_dungeons_to_get_full_equip = calculate_average_number_of_dungeons_to_get_full_equip(num_iterations)
-    average_damage_in_easy_dungeon = calculate_average_damage_in_easy_dungeon(num_iterations)
+    average_number_of_dungeons_to_get_the_first_rare = calculate_average_number_of_dungeons_to_get_the_first_rare(num_iterations)
+    average_damage_to_single_chatacter_in_easy_dungeon = calculate_average_damage_to_single_chatacter_in_easy_dungeon(num_iterations)
+    average_damage_to_single_chatacter_in_medium_dungeon = calculate_average_damage_to_single_chatacter_in_medium_dungeon(num_iterations)
     average_number_of_small_healing_potions_in_easy_dungeon = calculate_average_number_of_small_healing_potions_in_easy_dungeon(num_iterations)
 
     # Test sul numero di dungeon per il primo oggetto raro
@@ -30,12 +33,20 @@ def main():
         print(f"⚠️ Il numero medio di dungeon per ottenere il full equip è troppo alto! ({average_number_of_dungeons_to_get_full_equip:.2f}). Il valore ottimale è compreso tra 2.7 e 3.0.")
 
     # Test sul danno medio in un dungeon facile
-    if average_damage_in_easy_dungeon >= 21 and average_damage_in_easy_dungeon <= 22:
-        print(f"✅ Danno medio in un dungeon facile: {average_damage_in_easy_dungeon:.2f}")
-    elif average_damage_in_easy_dungeon < 21:
-        print(f"⚠️ Il danno medio in un dungeon facile è troppo basso! ({average_damage_in_easy_dungeon:.2f}). Il valore ottimale è compreso tra 21 e 22.")
-    elif average_damage_in_easy_dungeon > 22:
-        print(f"⚠️ Il danno medio in un dungeon facile è troppo alto! ({average_damage_in_easy_dungeon:.2f}). Il valore ottimale è compreso tra 21 e 22.")
+    if average_damage_to_single_chatacter_in_easy_dungeon >= 21 and average_damage_to_single_chatacter_in_easy_dungeon <= 22:
+        print(f"✅ Danno medio in un dungeon facile: {average_damage_to_single_chatacter_in_easy_dungeon:.2f}")
+    elif average_damage_to_single_chatacter_in_easy_dungeon < 21:
+        print(f"⚠️ Il danno medio in un dungeon facile è troppo basso! ({average_damage_to_single_chatacter_in_easy_dungeon:.2f}). Il valore ottimale è compreso tra 21 e 22.")
+    elif average_damage_to_single_chatacter_in_easy_dungeon > 22:
+        print(f"⚠️ Il danno medio in un dungeon facile è troppo alto! ({average_damage_to_single_chatacter_in_easy_dungeon:.2f}). Il valore ottimale è compreso tra 21 e 22.")
+
+    # Test sul danno medio in un dungeon medio
+    if average_damage_to_single_chatacter_in_medium_dungeon >= 31 and average_damage_to_single_chatacter_in_medium_dungeon <= 32:
+        print(f"✅ Danno medio in un dungeon medio: {average_damage_to_single_chatacter_in_medium_dungeon:.2f}")
+    elif average_damage_to_single_chatacter_in_medium_dungeon < 31:
+        print(f"⚠️ Il danno medio in un dungeon medio è troppo basso! ({average_damage_to_single_chatacter_in_medium_dungeon:.2f}). Il valore ottimale è compreso tra 31 e 33.")
+    elif average_damage_to_single_chatacter_in_medium_dungeon > 33:
+        print(f"⚠️ Il danno medio in un dungeon medio è troppo alto! ({average_damage_to_single_chatacter_in_medium_dungeon:.2f}). Il valore ottimale è compreso tra 31 e 33.")
 
     # Test sul numero medio di pozioni di guarigione in un dungeon facile
     if average_number_of_small_healing_potions_in_easy_dungeon >= 3 and average_number_of_small_healing_potions_in_easy_dungeon <= 4:
