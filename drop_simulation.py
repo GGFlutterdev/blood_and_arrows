@@ -10,7 +10,7 @@ def number_of_dungeons_to_get_full_equip(_=None):
     amulets = 0
     rings = 0
     number_of_dungeons = 0
-    while amulets < 1 and rings < 2:
+    while amulets < 4 and rings < 8:
         dungeon = generate_dungeon(difficulty="Easy")
         rooms = dungeon.rooms
         for room in rooms:

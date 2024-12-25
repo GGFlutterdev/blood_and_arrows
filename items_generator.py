@@ -29,8 +29,8 @@ def assign_items_to_rooms(rooms):
                     assign_random_item_to_room(room, common_items)
 
             if room.uncommon_items:
-                assign_random_item_to_room(room, uncommon_items, 0.125)
-                assign_random_item_to_room(room, uncommon_items, 0.1)
+                assign_random_item_to_room(room, uncommon_items, 0.75)
+                assign_random_item_to_room(room, uncommon_items, 0.67)
 
             if room.rare_items:
                 assign_random_item_to_room(room, rare_items, 0.2)
@@ -42,7 +42,7 @@ def assign_items_to_rooms(rooms):
                     assign_random_item_to_room(room, common_items)
 
             if room.uncommon_items:
-                assign_random_item_to_room(room, uncommon_items, 0.167)
+                assign_random_item_to_room(room, uncommon_items, 0.5)
 
             if room.rare_items:
                 assign_random_item_to_room(room, rare_items, 0.143)
