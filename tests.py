@@ -3,10 +3,12 @@ from drop_simulation import calculate_average_number_of_dungeons_to_get_full_equ
 from combat_simulation import calculate_average_damage_in_easy_dungeon
 
 def main():
+    num_iterations = 10000
+
     print("🧪 Running tests...")
-    average_number_of_dungeons_to_get_the_first_rare = calculate_average_number_of_dungeons_to_get_the_first_rare()
-    average_number_of_dungeons_to_get_full_equip = calculate_average_number_of_dungeons_to_get_full_equip()
-    average_damage_in_easy_dungeon = calculate_average_damage_in_easy_dungeon()
+    average_number_of_dungeons_to_get_the_first_rare = calculate_average_number_of_dungeons_to_get_the_first_rare(num_iterations)
+    average_number_of_dungeons_to_get_full_equip = calculate_average_number_of_dungeons_to_get_full_equip(num_iterations)
+    average_damage_in_easy_dungeon = calculate_average_damage_in_easy_dungeon(num_iterations)
 
     # Test sul numero di dungeon per il primo oggetto raro
     if average_number_of_dungeons_to_get_the_first_rare > 3.8 and average_number_of_dungeons_to_get_the_first_rare < 4.1:
