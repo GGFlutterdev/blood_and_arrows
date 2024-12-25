@@ -4,112 +4,12 @@
       "rare_items": false,
       "uncommon_items": true,
       "common_items": true,
-      "has_encounter": true,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": false,
-      "common_items": true,
       "has_encounter": true
     },
     {
       "rare_items": false,
       "uncommon_items": false,
       "common_items": true,
-      "has_encounter": false,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": false,
-      "has_encounter": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": true,
-      "has_encounter": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": false,
-      "common_items": true,
-      "has_encounter": true,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": false,
-      "common_items": true,
-      "has_encounter": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": true,
-      "has_encounter": false,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": false,
-      "common_items": true,
-      "has_encounter": true,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": false,
-      "has_encounter": true,
-      "has_chest": false
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": true,
-      "has_encounter": false,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": true,
-      "has_encounter": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": true,
-      "has_encounter": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": true,
-      "has_encounter": false,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": false,
-      "has_encounter": true,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": false,
-      "common_items": true,
-      "has_encounter": true,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": true,
-      "common_items": false,
       "has_encounter": true
     },
     {
@@ -117,20 +17,7 @@
       "uncommon_items": true,
       "common_items": true,
       "has_encounter": true,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": false,
-      "common_items": true,
-      "has_encounter": false,
-      "has_chest": true
-    },
-    {
-      "rare_items": false,
-      "uncommon_items": false,
-      "common_items": true,
-      "has_encounter": true
+      "has_chest":true
     },
     {
       "rare_items": true,

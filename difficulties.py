@@ -6,11 +6,11 @@ import random
 difficulties = {
     "Easy": {
         "DSP": lambda: random.randint(1, 6) - 1,
-        "DSN": lambda: random.randint(1, 6) + 2
+        "DSN": lambda: random.randint(1, 6) + 1
     },
     "Medium": {
-        "DSP": lambda: random.randint(1, 8) + 2,
-        "DSN": lambda: random.randint(1, 10) + 2,
+        "DSP": lambda: random.randint(1, 8),
+        "DSN": lambda: random.randint(1, 10) + 1,
     },
     "Hard": {
         "DSP": lambda: random.randint(1, 8) + random.randint(1, 6),

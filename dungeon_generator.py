@@ -29,7 +29,7 @@ def get_five_rooms():
     reward_rooms = [room for room in all_rooms if room.is_reward]
     rooms = [room for room in all_rooms if not room.is_boss and not room.is_reward]
 
-    selected_rooms = random.sample(rooms, 3)
+    selected_rooms = random.choices(rooms, k=3)
     selected_boss_room = random.choice(boss_rooms)
     selected_reward_room = random.choice(reward_rooms)
 
