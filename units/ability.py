@@ -13,7 +13,6 @@ class Ability:
     ):
         self.description = description
         self.max_selection = max_selection
-        self.damage = damage
         self.heal = heal
         self.pc = pc
         self.damage_reduction_next_fight = damage_reduction_next_fight

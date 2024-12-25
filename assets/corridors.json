@@ -2,21 +2,21 @@
   "corridors": [
     {
       "ambush": {
-        "damage": "4 damage to a single target",
+        "damage": 4,
         "description": "Dei goblin hanno assalito il giocatore in avanguardia."
       },
       "has_secret_door": false
     },
     {
       "ambush": {
-        "damage": "2 damage to the group",
+        "damage": 2,
         "description": "Dei goblin hanno assalito il gruppo"
       },
       "has_secret_door": false
     },
     {
       "trap": {
-        "damage": "2 damage to the group",
+        "damage": 2,
         "description": "Un sottile cavo attaccato a dei campanelli attraversa il corridoio. Se non individuato o disinnescato un gruppo di goblin vi attaccherà."
       },
       "has_secret_door": false

@@ -1,7 +1,7 @@
 from units.chest import Chest
 
 class Room:
-    def __init__(self, rare_items=False, uncommon_items=False, common_items=False, has_encounter=False, trick=None, is_reward=False, has_chest=False):
+    def __init__(self, rare_items=False, uncommon_items=False, common_items=False, has_encounter=False, trick=None, is_reward=False, is_boss=False, has_chest=False):
         self.rare_items = rare_items
         self.uncommon_items = uncommon_items
         self.common_items = common_items
@@ -10,6 +10,7 @@ class Room:
         self.items = []
         self.encounter = None
         self.is_reward = is_reward  # Serve per assegnare una probabilità più alta di trovare un oggetto non comune o raro nella stanza
+        self.is_boss = is_boss
         self.chest = Chest() if has_chest else None
 
     def __str__(self):

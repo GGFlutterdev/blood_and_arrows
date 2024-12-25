@@ -17,11 +17,9 @@ class Corridor:
         return f"Corridor({ambush_info}, {trap_info}, {secret_door_info})"
 
     def is_trapped(self):
-        """Return True if the corridor has either a trap or an ambush."""
         return bool(self.trap.get("damage") or self.ambush.get("damage"))
 
     def to_dict(self):
-        """Convert the Corridor instance to a dictionary."""
         result = {"has_secret_door": self.has_secret_door}
         if self.ambush.get("damage"):
             result["ambush"] = self.ambush
@@ -31,7 +29,6 @@ class Corridor:
 
     @classmethod
     def from_dict(cls, data: dict):
-        """Create a Corridor instance from a dictionary."""
         return cls(
             ambush=data.get("ambush", {}),
             trap=data.get("trap", {}),

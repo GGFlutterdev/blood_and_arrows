@@ -11,7 +11,7 @@ def number_of_dungeons_to_get_full_equip(_=None):
     rings = 0
     number_of_dungeons = 0
     while amulets < 1 and rings < 2:
-        dungeon = generate_dungeon()
+        dungeon = generate_dungeon(difficulty="Easy")
         rooms = dungeon.rooms
         for room in rooms:
             items = room.items
@@ -34,7 +34,7 @@ def number_of_dungeons_to_get_the_first_rare(_=None):
     rares = 0
     number_of_dungeons = 0
     while rares < 1:
-        dungeon = generate_dungeon()
+        dungeon = generate_dungeon(difficulty="Easy")
         rooms = dungeon.rooms
         for room in rooms:
             items = room.items
